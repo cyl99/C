@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TabLayout
+        app:tabMode="scrollable"
+        android:background="@color/colorAccent"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+<ImageView
+    android:background="@color/colorAccent"
+    android:layout_margin="10dp"
+    android:layout_alignParentRight="true"
+    android:id="@+id/tab_iv"
+    android:src="@mipmap/ic_menu"
+    android:layout_width="30dp"
+    android:layout_height="30dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:layout_below="@id/tab" />
+</RelativeLayout>
